@@ -11,3 +11,5 @@ WHILE "nominalBayar" LESS THAN "totalBarang"
 WHILE "nominalBayar" MORE THAN EQUAL "totalBarang"
   PRINT "Terima kasih sudah membeli barang di toko kami"
   DO CALCULATE "nominalBayar" MINES "totalBarang" EQUAL "sisaUang"
+DISPLAY "sisaUang"
+END
