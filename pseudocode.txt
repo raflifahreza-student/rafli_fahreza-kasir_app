@@ -1,0 +1,15 @@
+PRINT "listBarang" AS STRING WITH ANY VALUE
+STORE "barang" AS STRING WITH ANY VALUE
+STORE "jumlahBarang" AS NUMBER WITH ANY VALUE
+STORE CALCULATE "totalBarang" AS WITH barang times jumlahBarang
+PRINT "totalBarang"
+STORE "nominalBayar" AS NUMBER WIRH ANY VALUE
+
+WHILE "nominalBayar" LESS THAN "totalBarang"
+  PRINT "Uang anda tidak cukup silahkan bayar dengan nominal yang sesuai"
+  DO BACK TO STORE "nominalBayar"
+WHILE "nominalBayar" MORE THAN EQUAL "totalBarang"
+  PRINT "Terima kasih sudah membeli barang di toko kami"
+  DO CALCULATE "nominalBayar" MINES "totalBarang" EQUAL "sisaUang"
+DISPLAY "sisaUang"
+END
