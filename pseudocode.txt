@@ -1,3 +1,5 @@
 PRINT "listBarang" AS STRING WITH ANY VALUE
 STORE "barang" AS STRING WITH ANY VALUE
 STORE "jumlahBarang" AS NUMBER WITH ANY VALUE
+STORE CALCULATE "totalBarang" AS WITH barang times jumlahBarang
+PRINT "totalBarang"
